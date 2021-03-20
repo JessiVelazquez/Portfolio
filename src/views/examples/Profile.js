@@ -23,7 +23,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import profile from "assets/img/theme/team-4-800x800.jpg";
+import profile from "assets/img/theme/headshot.jpg";
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -94,64 +94,75 @@ class Profile extends React.Component {
                         >
                           Connect
                         </Button>
-                        <Button
-                          className="float-right"
-                          color="default"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                          size="sm"
-                        >
-                          Message
-                        </Button>
                       </div>
                     </Col>
                     <Col className="order-lg-1" lg="4">
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
-                          <span className="heading">22</span>
-                          <span className="description">Friends</span>
+                          <span className="heading">500+</span>
+                          <span className="description">Followers</span>
                         </div>
                         <div>
-                          <span className="heading">10</span>
-                          <span className="description">Photos</span>
-                        </div>
-                        <div>
-                          <span className="heading">89</span>
-                          <span className="description">Comments</span>
+                          <span className="heading">5</span>
+                          <span className="description">Projects</span>
                         </div>
                       </div>
                     </Col>
                   </Row>
                   <div className="text-center mt-5">
                     <h3>
-                      Jessica Jones{" "}
-                      <span className="font-weight-light">, 27</span>
+                      Jessi Velazquez{" "}
+                      <span className="font-weight-light"></span>
                     </h3>
                     <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
+                      Seattle, Washington
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
+                      Software Developer
+                    </div>
+                    <br></br>
+                    <div>
+                      <i className="ni education_hat mr-2" />
+                      Code Fellows Academy, 2021
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
-                      University of Computer Science
+                      University of Washington, 2012
+                    </div>
+                    <div>
+                      <i className="ni education_hat mr-2" />
+                      University of Washington, 2008
                     </div>
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
                     <Row className="justify-content-center">
                       <Col lg="9">
                         <p>
-                          An artist of considerable range, Ryan — the name taken
-                          by Melbourne-raised, Brooklyn-based Nick Murphy —
-                          writes, performs and records all of his own music,
-                          giving it a warm, intimate feel with a solid groove
-                          structure. An artist of considerable range.
+                          I am a full stack javascript developer.<br></br>
+                          <br></br>
+
+                          I am a skilled leader, communicator, and project manager with over ten years of public and private sector experience in the environmental science and natural resource fields, with a background in data analysis, GIS, and consulting.<br></br>
+                          <br></br>
+
+                          I have experience using the R language for visualizing and analyzing data, and experience deploying interactive GIS maps on the web. I also have experience using javascript to design interactive web applications.<br></br>
+                          <br></br>
+
+                          My interest in tech is based on the ability to creatively design needs-based software tools ad hoc, free of the confines of existing software currently on the market.<br></br>
+                          <br></br>
+
+                          I also have a background as a musician, where I have enjoyed working in creative team environments.<br></br>
+                          <br></br>
+
+                          I aim to pair my creative and collaborative side with my analytical thinking background to design meaningful, data driven, and sleekly designed web applications.<br></br>
+                          <br></br>
+
+                          I thrive in roles where I can leverage my leadership and communication skills to understand clients needs and deploy strategic technological solutions to deliver on those needs.
+
                         </p>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          Show more
+                          {/* Show more */}
                         </a>
                       </Col>
                     </Row>
