@@ -24,6 +24,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 import profile from "assets/img/theme/headshot.jpg";
+import headerbackground6 from "assets/img/theme/headerbackground6.jpg"
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -38,14 +39,19 @@ class Profile extends React.Component {
         <main className="profile-page" ref="main">
           <section className="section-profile-cover section-shaped my-0">
             {/* Circles background */}
-            <div className="shape shape-style-1 shape-default alpha-4">
+            <div >
+              <img
+              className="shape shape-style-1 shape-default alpha-4"
+              src={headerbackground6}
+              width='1500'
+              />
+              {/* <span />
               <span />
               <span />
               <span />
               <span />
               <span />
-              <span />
-              <span />
+              <span /> */}
             </div>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">
@@ -71,7 +77,9 @@ class Profile extends React.Component {
                   <Row className="justify-content-center">
                     <Col className="order-lg-2" lg="3">
                       <div className="card-profile-image">
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="https://www.linkedin.com/in/jessivelazquez/" 
+                        // onClick={e => e.preventDefault()}
+                        >
                           <img
                             alt="..."
                             className="rounded-circle"
@@ -88,11 +96,11 @@ class Profile extends React.Component {
                         <Button
                           className="mr-4"
                           color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          href="https://www.linkedin.com/in/jessivelazquez/"
+                          // onClick={e => e.preventDefault()}
                           size="sm"
                         >
-                          Connect
+                          Find me on Linked In
                         </Button>
                       </div>
                     </Col>
@@ -140,7 +148,7 @@ class Profile extends React.Component {
                     <Row className="justify-content-center">
                       <Col lg="9">
                         <p>
-                          I am a full stack javascript developer.<br></br>
+                          I am a full stack javascript developer located in Seattle, WA.<br></br>
                           <br></br>
 
                           I am a skilled leader, communicator, and project manager with over ten years of public and private sector experience in the environmental science and natural resource fields, with a background in data analysis, GIS, and consulting.<br></br>

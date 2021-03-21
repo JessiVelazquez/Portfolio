@@ -30,6 +30,10 @@ import drummachine from "assets/img/theme/DrumMachine.png";
 import horns from "assets/img/theme/Horns.png";
 import headshot from "assets/img/theme/headshot.jpg";
 import recipes from "assets/img/theme/recipes.png";
+import aboutme from "assets/img/theme/aboutme.jpg"
+import aboutme2 from "assets/img/theme/aboutme2.jpg"
+import headerbackground from "assets/img/theme/headerbackground.jpg"
+import headerbackground6 from "assets/img/theme/headerbackground6.jpg"
 
 // reactstrap components
 import {
@@ -70,7 +74,13 @@ class Landing extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default">
+              <div >
+                <img
+                className="shape shape-style-1 shape-default alpha-4"
+                src={headerbackground6}
+                width='1500'
+                />
+                {/* <span />
                 <span />
                 <span />
                 <span />
@@ -78,8 +88,7 @@ class Landing extends React.Component {
                 <span />
                 <span />
                 <span />
-                <span />
-                <span />
+                <span /> */}
               </div>
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
@@ -127,7 +136,7 @@ class Landing extends React.Component {
                           <h6 className="text-primary text-uppercase">
                             Gallery of Horns
                           </h6>
-                          <img src={horns} width='200' />
+                          <img src={horns} width='200' className="shadow border-0 img-fluid rounded shadow" />
                           <p className="description mt-3">
                             A React app that displays cards of different animals, allowing the user to filter based on their number of horns.
                           </p>
@@ -139,12 +148,12 @@ class Landing extends React.Component {
                               Javascript
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              CSS
+                              bootstrap.js
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
-                            color="primary"
+                            color="success"
                             href="https://agitated-meitner-31b5e4.netlify.app/"
                             // onClick={e => e.preventDefault()}
                           >
@@ -156,21 +165,21 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <h6 className="text-success text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Drum Machine
                           </h6>
-                          <img src={drummachine} width='200' />
+                          <img src={drummachine} width='200' className="shadow border-0 img-fluid rounded shadow"/>
                           <p className="description mt-3">
-                            A 8 beat-pattern drum machine designed using JavaScript, HTML, and CSS that features 11 instrument tracks each with a selectable sound library and tempo slider.
+                            A 8 beat-pattern drum machine designed using Javascript, HTML, and CSS that features 11 instrument tracks each with a selectable sound library and tempo slider.
                           </p>
                           <div>
-                            <Badge color="success" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               Javascript
                             </Badge>
-                            <Badge color="success" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               HTML
                             </Badge>
-                            <Badge color="success" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               CSS
                             </Badge>
                           </div>
@@ -188,27 +197,27 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Cookie Stand
                           </h6>
-                          <img src={cookiestand} width={200} />
+                          <img src={cookiestand} width='200' className="shadow border-0 img-fluid rounded shadow"/>
                           <p className="description mt-3">
                             A web application built in Javascript that renders tabular data based on user input, allowing a bakery manager to predict number of sales by hour at different store locations by inputting sales data.
                           </p>
                           <div>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               Javascript
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               HTML
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               CSS
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
-                            color="warning"
+                            color="success"
                             href="https://jessivelazquez.github.io/cookie-stand/sales.html"
                             // onClick={e => e.preventDefault()}
                           >
@@ -220,27 +229,27 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Recipe Roulette
                           </h6>
-                          <img src={recipes} width={200} />
+                          <img src={recipes} width='200' className="shadow border-0 img-fluid rounded shadow"/>
                           <p className="description mt-3">
                             A user-research study that randomly generates recipes and tracks users' decisons to view light or dark mode in local storage.
                           </p>
                           <div>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               Javascript
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               HTML
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               CSS
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
-                            color="warning"
+                            color="success"
                             href="https://oakfive.github.io/recipe-roulette/"
                             // onClick={e => e.preventDefault()}
                           >
@@ -252,7 +261,7 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Future Project Placeholder
                           </h6>
                           <img width={200} />
@@ -260,19 +269,19 @@ class Landing extends React.Component {
                             sample text
                           </p>
                           <div>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               Javascript
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               HTML
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               CSS
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
-                            color="warning"
+                            color="success"
                             href="#pablo"
                             onClick={e => e.preventDefault()}
                           >
@@ -284,7 +293,7 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Future Project Placeholder
                           </h6>
                           <img width={200} />
@@ -292,19 +301,19 @@ class Landing extends React.Component {
                             sample text
                           </p>
                           <div>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               Javascript
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               HTML
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
+                            <Badge color="primary" pill className="mr-1">
                               CSS
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
-                            color="warning"
+                            color="success"
                             href="#pablo"
                             onClick={e => e.preventDefault()}
                           >
@@ -325,7 +334,8 @@ class Landing extends React.Component {
                     <img 
                     alt='...'
                     src={horns} 
-                    width={350}
+                    width='350'
+                    className="shadow border-0 img-fluid rounded shadow"
                     />
                 </Col>
                 <Col className="order-md-1" md="6">
@@ -402,7 +412,7 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={headshot}
+                      src={aboutme}
                       width='250'
                       top
                     />
@@ -433,12 +443,12 @@ class Landing extends React.Component {
                 </Col>
                 <Col md="6">
                   <div className="pl-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
-                    <i class="fa fa-tree"></i>
-                    </div>
+                    {/* <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5"> */}
+                    {/* <i class="fa fa-tree"></i> */}
+                    {/* </div> */}
                     <h3>About Me</h3>
                     <p >
-                          I am a full stack javascript developer.<br></br>
+                          I am a full stack javascript developer located in Seattle, WA.<br></br>
                           <br></br>
 
                           I am a skilled leader, communicator, and project manager with over ten years of public and private sector experience in the environmental science and natural resource fields, with a background in data analysis, GIS, and consulting.<br></br>
