@@ -25,6 +25,11 @@ import team1 from "assets/img/theme/team-1-800x800.jpg";
 import team2 from "assets/img/theme/team-2-800x800.jpg";
 import team3 from "assets/img/theme/team-3-800x800.jpg";
 import team4 from "assets/img/theme/team-4-800x800.jpg";
+import cookiestand from "assets/img/theme/CookieStand.png";
+import drummachine from "assets/img/theme/DrumMachine.png";
+import horns from "assets/img/theme/Horns.png";
+import headshot from "assets/img/theme/headshot.jpg";
+import recipes from "assets/img/theme/recipes.png";
 
 // reactstrap components
 import {
@@ -81,38 +86,13 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        My Portfolio{" "}
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                      I am fasciniated by the flexibility of technology, and the ability to creatively design needs-based software tools ad hoc, free of the confines of existing software currently on the market.<br></br>
+                      <br></br>
+                      Check out some of my projects below:
                       </p>
-                      <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="fa fa-code" />
-                          </span>
-                          <span className="btn-inner--text">Components</span>
-                        </Button>
-                        <Button
-                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                          color="default"
-                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="ni ni-cloud-download-95" />
-                          </span>
-                          <span className="btn-inner--text">
-                            Download React
-                          </span>
-                        </Button>
-                      </div>
                     </Col>
                   </Row>
                 </div>
@@ -144,35 +124,31 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
-                          </div>
                           <h6 className="text-primary text-uppercase">
-                            Download Argon
+                            Gallery of Horns
                           </h6>
+                          <img src={horns} width='200' />
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            A React app that displays cards of different animals, allowing the user to filter based on their number of horns.
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
-                              design
+                              React
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              system
+                              Javascript
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              creative
+                              CSS
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="primary"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            href="https://agitated-meitner-31b5e4.netlify.app/"
+                            // onClick={e => e.preventDefault()}
                           >
-                            Learn more
+                            View Site
                           </Button>
                         </CardBody>
                       </Card>
@@ -180,35 +156,31 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
-                          </div>
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                            Drum Machine
                           </h6>
+                          <img src={drummachine} width='200' />
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            A 8 beat-pattern drum machine designed using JavaScript, HTML, and CSS that features 11 instrument tracks each with a selectable sound library and tempo slider.
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">
-                              business
+                              Javascript
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              vision
+                              HTML
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              success
+                              CSS
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            href="https://jessivelazquez.github.io/DrumMachine/"
+                            // onClick={e => e.preventDefault()}
                           >
-                            Learn more
+                            View Site
                           </Button>
                         </CardBody>
                       </Card>
@@ -216,26 +188,86 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
-                          </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                            Cookie Stand
                           </h6>
+                          <img src={cookiestand} width={200} />
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            A web application built in Javascript that renders tabular data based on user input, allowing a bakery manager to predict number of sales by hour at different store locations by inputting sales data.
                           </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
-                              marketing
+                              Javascript
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              product
+                              HTML
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              launch
+                              CSS
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="warning"
+                            href="https://jessivelazquez.github.io/cookie-stand/sales.html"
+                            // onClick={e => e.preventDefault()}
+                          >
+                            View Site
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <h6 className="text-warning text-uppercase">
+                            Recipe Roulette
+                          </h6>
+                          <img src={recipes} width={200} />
+                          <p className="description mt-3">
+                            A user-research study that randomly generates recipes and tracks users' decisons to view light or dark mode in local storage.
+                          </p>
+                          <div>
+                            <Badge color="warning" pill className="mr-1">
+                              Javascript
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              HTML
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              CSS
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="warning"
+                            href="https://oakfive.github.io/recipe-roulette/"
+                            // onClick={e => e.preventDefault()}
+                          >
+                            View Site
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <h6 className="text-warning text-uppercase">
+                            Future Project Placeholder
+                          </h6>
+                          <img width={200} />
+                          <p className="description mt-3">
+                            sample text
+                          </p>
+                          <div>
+                            <Badge color="warning" pill className="mr-1">
+                              Javascript
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              HTML
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              CSS
                             </Badge>
                           </div>
                           <Button
@@ -244,7 +276,39 @@ class Landing extends React.Component {
                             href="#pablo"
                             onClick={e => e.preventDefault()}
                           >
-                            Learn more
+                            View Site
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <h6 className="text-warning text-uppercase">
+                            Future Project Placeholder
+                          </h6>
+                          <img width={200} />
+                          <p className="description mt-3">
+                            sample text
+                          </p>
+                          <div>
+                            <Badge color="warning" pill className="mr-1">
+                              Javascript
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              HTML
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              CSS
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="warning"
+                            href="#pablo"
+                            onClick={e => e.preventDefault()}
+                          >
+                            View Site
                           </Button>
                         </CardBody>
                       </Card>
@@ -258,22 +322,22 @@ class Landing extends React.Component {
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
-                  <img
-                    alt="..."
-                    className="img-fluid floating"
-                    src={promo1}
-                  />
+                    <img 
+                    alt='...'
+                    src={horns} 
+                    width={350}
+                    />
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                      <i className="ni ni-settings-gear-65" />
-                    </div>
-                    <h3>Awesome features</h3>
+                    {/* <div>
+                      <p>
+                        <br></br>
+                      </p>
+                    </div> */}
+                    <h3>Featured Project: Gallery of Horns</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                    A React app that displays cards of different animals, allowing the user to filter based on their number of horns.
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
@@ -283,12 +347,12 @@ class Landing extends React.Component {
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-settings-gear-65" />
+                              <i class="fa fa-code"></i>
                             </Badge>
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Carefully crafted components
+                              Dropdown form to filter data
                             </h6>
                           </div>
                         </div>
@@ -300,11 +364,11 @@ class Landing extends React.Component {
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-html5" />
+                              <i class="fa fa-code"></i>
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
+                            <h6 className="mb-0">Like Count Button</h6>
                           </div>
                         </div>
                       </li>
@@ -315,12 +379,12 @@ class Landing extends React.Component {
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-satisfied" />
+                              <i class="fa fa-code"></i>
                             </Badge>
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Super friendly support team
+                              Colorful Styling
                             </h6>
                           </div>
                         </div>
@@ -338,7 +402,8 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={cardImg}
+                      src={headshot}
+                      width='250'
                       top
                     />
                     <blockquote className="card-blockquote">
@@ -358,13 +423,10 @@ class Landing extends React.Component {
                           points="0,42 583,95 683,0 0,95"
                         />
                       </svg>
-                      <h4 className="display-3 font-weight-bold text-white">
-                        Design System
+                      <h4 className="display-5 font-weight-bold text-white">
+                        Jessi Velazquez
                       </h4>
-                      <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
+                      <p className="text-italic text-white font-size 12">
                       </p>
                     </blockquote>
                   </Card>
@@ -372,37 +434,36 @@ class Landing extends React.Component {
                 <Col md="6">
                   <div className="pl-md-5">
                     <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
-                      <i className="ni ni-settings" />
+                    <i class="fa fa-tree"></i>
                     </div>
-                    <h3>Our customers</h3>
-                    <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
+                    <h3>About Me</h3>
+                    <p >
+                          I am a full stack javascript developer.<br></br>
+                          <br></br>
+
+                          I am a skilled leader, communicator, and project manager with over ten years of public and private sector experience in the environmental science and natural resource fields, with a background in data analysis, GIS, and consulting.<br></br>
+                          <br></br>
+
+                          I have experience using the R language for visualizing and analyzing data, and experience deploying interactive GIS maps on the web. I also have experience using javascript to design interactive web applications.<br></br>
+                          <br></br>
+
+                          My interest in tech is based on the ability to creatively design needs-based software tools ad hoc, free of the confines of existing software currently on the market.<br></br>
+                          <br></br>
+
+                          I also have a background as a musician, where I have enjoyed working in creative team environments.<br></br>
+                          <br></br>
+
+                          I aim to pair my creative and collaborative side with my analytical thinking background to design meaningful, data driven, and sleekly designed web applications.<br></br>
+                          <br></br>
+
+                          I thrive in roles where I can leverage my leadership and communication skills to understand clients needs and deploy strategic technological solutions to deliver on those needs.
                     </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <a
-                      className="font-weight-bold text-warning mt-5"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      A beautiful UI Kit for impactful websites
-                    </a>
                   </div>
                 </Col>
               </Row>
             </Container>
           </section>
-          <section className="section pb-0 bg-gradient-warning">
+          {/* <section className="section pb-0 bg-gradient-warning">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -489,7 +550,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+            SVG separator
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -505,8 +566,8 @@ class Landing extends React.Component {
                 />
               </svg>
             </div>
-          </section>
-          <section className="section section-lg">
+          </section> */}
+          {/* <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -691,8 +752,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section className="section section-lg pt-0">
+          </section> */}
+          {/* <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
                 <div className="p-5">
@@ -722,8 +783,8 @@ class Landing extends React.Component {
                 </div>
               </Card>
             </Container>
-          </section>
-          <section className="section section-lg bg-gradient-default">
+          </section> */}
+          {/* <section className="section section-lg bg-gradient-default">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
@@ -769,7 +830,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+            SVG separator
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -785,8 +846,8 @@ class Landing extends React.Component {
                 />
               </svg>
             </div>
-          </section>
-          <section className="section section-lg pt-lg-0 section-contact-us">
+          </section> */}
+          {/* <section className="section section-lg pt-lg-0 section-contact-us">
             <Container>
               <Row className="justify-content-center mt--300">
                 <Col lg="8">
@@ -860,8 +921,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <Download />
+          </section> */}
+          {/* <Download /> */}
         </main>
         <CardsFooter />
       </>
