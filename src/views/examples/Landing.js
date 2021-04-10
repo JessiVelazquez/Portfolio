@@ -34,6 +34,8 @@ import aboutme from "assets/img/theme/aboutme.jpg"
 import aboutme2 from "assets/img/theme/aboutme2.jpg"
 import headerbackground from "assets/img/theme/headerbackground.jpg"
 import headerbackground6 from "assets/img/theme/headerbackground6.jpg"
+import genreroom from "assets/img/theme/genreroom.png"
+import cityexplorer from "assets/img/theme/cityexplorer.png"
 
 // reactstrap components
 import {
@@ -130,15 +132,47 @@ class Landing extends React.Component {
               <Row className="justify-content-center">
                 <Col lg="12">
                   <Row className="row-grid">
+                  <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <h6 className="text-primary text-uppercase">
+                            Genre Room
+                          </h6>
+                          <img src={genreroom} width='200' className="shadow border-0 img-fluid rounded shadow"/>
+                          <p className="description mt-3">
+                            A full stack MERN (Mongo, Express, React, Node) application with user authentication and third party API querying to give a user movie recommendations based on their choice of genre. 
+                          </p>
+                          <div>
+                            <Badge color="primary" pill className="mr-1">
+                              React
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              MongoDB
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              Node.js
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="success"
+                            href="https://clever-ardinghelli-fdb608.netlify.app/"
+                            // onClick={e => e.preventDefault()}
+                          >
+                            View Site
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <h6 className="text-primary text-uppercase">
-                            Gallery of Horns
+                            City Explorer
                           </h6>
-                          <img src={horns} width='200' className="shadow border-0 img-fluid rounded shadow" />
+                          <img src={cityexplorer} width='200' className="shadow border-0 img-fluid rounded shadow"/>
                           <p className="description mt-3">
-                            A React app that displays cards of different animals, allowing the user to filter based on their number of horns.
+                            A React application that uses three third party API's to give a user a map, weather, and entertainment-related information about a city of their choice.
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
@@ -148,13 +182,13 @@ class Landing extends React.Component {
                               Javascript
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              bootstrap.js
+                              API
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="success"
-                            href="https://agitated-meitner-31b5e4.netlify.app/"
+                            href="https://practical-allen-4f642c.netlify.app/"
                             // onClick={e => e.preventDefault()}
                           >
                             View Site
@@ -187,6 +221,38 @@ class Landing extends React.Component {
                             className="mt-4"
                             color="success"
                             href="https://jessivelazquez.github.io/DrumMachine/"
+                            // onClick={e => e.preventDefault()}
+                          >
+                            View Site
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <h6 className="text-primary text-uppercase">
+                            Gallery of Horns
+                          </h6>
+                          <img src={horns} width='200' className="shadow border-0 img-fluid rounded shadow" />
+                          <p className="description mt-3">
+                            A React app that displays cards of different animals, allowing the user to filter based on their number of horns.
+                          </p>
+                          <div>
+                            <Badge color="primary" pill className="mr-1">
+                              React
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              Javascript
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              bootstrap.js
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="success"
+                            href="https://agitated-meitner-31b5e4.netlify.app/"
                             // onClick={e => e.preventDefault()}
                           >
                             View Site
@@ -252,70 +318,6 @@ class Landing extends React.Component {
                             color="success"
                             href="https://oakfive.github.io/recipe-roulette/"
                             // onClick={e => e.preventDefault()}
-                          >
-                            View Site
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            Future Project Placeholder
-                          </h6>
-                          <img width={200} />
-                          <p className="description mt-3">
-                            sample text
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              Javascript
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              HTML
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              CSS
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            View Site
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            Future Project Placeholder
-                          </h6>
-                          <img width={200} />
-                          <p className="description mt-3">
-                            sample text
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              Javascript
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              HTML
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              CSS
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
                           >
                             View Site
                           </Button>
@@ -451,22 +453,19 @@ class Landing extends React.Component {
                           I am a full stack javascript developer located in Seattle, WA.<br></br>
                           <br></br>
 
-                          I am a skilled leader, communicator, and project manager with over ten years of public and private sector experience in the environmental science and natural resource fields, with a background in data analysis, GIS, and consulting.<br></br>
+                          I am a skilled leader, communicator, and project manager. Prior to coming to the tech industry, I have over ten years of public and private sector experience in the environmental science and natural resource fields, with a background in data analysis, GIS, and consulting.<br></br>
                           <br></br>
 
-                          I have experience using the R language for visualizing and analyzing data, and experience deploying interactive GIS maps on the web. I also have experience using javascript to design interactive web applications.<br></br>
+                          My interest in tech is based on the ability to creatively design unique, needs based software solutions, free of the confines of software currently existing on the market. My current portfolio includes full stack web applications that utilize technologies such as React, Javascript, MongoDB, Node.Js, Express, HTML, and CSS. I also have experience in Python and the R language.<br></br>
                           <br></br>
 
-                          My interest in tech is based on the ability to creatively design needs-based software tools ad hoc, free of the confines of existing software currently on the market.<br></br>
+                          I also have a background as a musician, where I have enjoyed working in creative team environments. In pairing my creative side with my analytical background, I bring the ability to design meaningful, data driven, and design cognizant software solutions.<br></br>
                           <br></br>
 
-                          I also have a background as a musician, where I have enjoyed working in creative team environments.<br></br>
+                          As a member of the LGBTQIA community, I believe that diversity, equity, and inclusion (DEI) factor strongly into any company's successes. In a former role, I served as Chairperson of a corporate DEI committee at the international level.<br></br>
                           <br></br>
 
-                          I aim to pair my creative and collaborative side with my analytical thinking background to design meaningful, data driven, and sleekly designed web applications.<br></br>
-                          <br></br>
-
-                          I thrive in roles where I can leverage my leadership and communication skills to understand clients needs and deploy strategic technological solutions to deliver on those needs.
+                          In my free time, I enjoy the outdoors, and am passionate about hiking and climbing in our beautiful mountains!
                     </p>
                   </div>
                 </Col>
