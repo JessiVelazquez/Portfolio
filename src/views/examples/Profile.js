@@ -24,6 +24,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 import profile from "assets/img/theme/headshot.jpg";
+import profileme from "assets/img/theme/profileme.jpg";
 import headerbackground6 from "assets/img/theme/headerbackground6.jpg"
 
 class Profile extends React.Component {
@@ -83,7 +84,7 @@ class Profile extends React.Component {
                           <img
                             alt="..."
                             className="rounded-circle"
-                            src={profile}
+                            src={profileme}
                           />
                         </a>
                       </div>
@@ -128,7 +129,7 @@ class Profile extends React.Component {
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Software Developer
+                      Full Stack Developer
                     </div>
                     <br></br>
                     <div>
