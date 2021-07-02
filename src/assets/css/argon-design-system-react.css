@@ -811,6 +811,9 @@ pre {
   .order-md-1 {
     order: 1; }
   .order-md-2 {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
     order: 2; }
   .order-md-3 {
     order: 3; }

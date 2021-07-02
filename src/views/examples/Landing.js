@@ -17,6 +17,7 @@
 */
 import React from "react";
 // nodejs library that concatenates classes
+import "assets/scss/argon-design-system-react.scss";
 import classnames from "classnames";
 import promo1 from "assets/img/theme/promo-1.png";
 import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
@@ -33,6 +34,7 @@ import taskqueue from "assets/img/theme/taskqueue.png";
 import headshot from "assets/img/theme/headshot.jpg";
 import recipes from "assets/img/theme/recipes.png";
 import aboutme from "assets/img/theme/aboutme.jpg"
+import me from "assets/img/theme/me.jpg"
 import aboutme2 from "assets/img/theme/aboutme2.jpg"
 import headerbackground from "assets/img/theme/headerbackground.jpg"
 import headerbackground6 from "assets/img/theme/headerbackground6.jpg"
@@ -135,12 +137,94 @@ class Landing extends React.Component {
                 <Col lg="12">
                   <Row className="row-grid">
                   <Col lg="4">
+                    <Card className="card-lift--hover shadow border-0">
+                      <CardBody className="py-5">
+                        <h6 className="text-primary text-uppercase">
+                          Storefront
+                        </h6>
+                        <a href="https://jessi-storefront.herokuapp.com/">
+                          <img 
+                            src={storefront} 
+                            width='200' 
+                            className="shadow border-0 img-fluid rounded shadow" 
+                          />
+                        </a>
+                        <p className="description mt-3">
+                          An e-commerce site built with React and Redux, including a shopping cart and styling with Material UI. Paired with a custom API server built in Node.js.
+                        </p>
+                        <div>
+                          <Badge color="primary" pill className="mr-1">
+                            React
+                          </Badge>
+                          <Badge color="primary" pill className="mr-1">
+                            Redux
+                          </Badge>
+                          <Badge color="primary" pill className="mr-1">
+                            Material UI
+                          </Badge>
+                        </div>
+                        <Button
+                          className="mt-4"
+                          color="success"
+                          href="https://jessi-storefront.herokuapp.com/"
+                          // onClick={e => e.preventDefault()}
+                        >
+                          View Site
+                        </Button>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  <Col lg="4">
+                    <Card className="card-lift--hover shadow border-0">
+                      <CardBody className="py-5">
+                        <h6 className="text-primary text-uppercase">
+                          Task Queue
+                        </h6>
+                        <a href="https://jessi-todo-react.herokuapp.com/">
+                          <img 
+                            src={taskqueue}
+                            width='200' 
+                            className="shadow border-0 img-fluid rounded shadow"
+                          />
+                        </a>
+                        <p className="description mt-3">
+                        A task tracking application that allows a user to add new tasks, update tasks as completed, and filter tasks several ways. Paired with a custom API server. 
+                        </p>
+                        <div>
+                          <Badge color="primary" pill className="mr-1">
+                            React
+                          </Badge>
+                          <Badge color="primary" pill className="mr-1">
+                            Redux
+                          </Badge>
+                          <Badge color="primary" pill className="mr-1">
+                            Node.js
+                          </Badge>
+                        </div>
+                        <Button
+                          className="mt-4"
+                          color="success"
+                          href="https://jessi-todo-react.herokuapp.com/"
+                          // onClick={e => e.preventDefault()}
+                        >
+                          View Site
+                        </Button>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <h6 className="text-primary text-uppercase">
                             Genre Room
                           </h6>
-                          <img src={genreroom} width='200' className="shadow border-0 img-fluid rounded shadow"/>
+                          <a href="https://clever-ardinghelli-fdb608.netlify.app/">
+                            <img 
+                              src={genreroom} 
+                              width='200' 
+                              className="shadow border-0 img-fluid rounded shadow"
+                            />
+                          </a>
                           <p className="description mt-3">
                             A full stack MERN (Mongo, Express, React, Node) application with user authentication and third party API querying to give a user movie recommendations based on their choice of genre. 
                           </p>
@@ -172,7 +256,13 @@ class Landing extends React.Component {
                           <h6 className="text-primary text-uppercase">
                             City Explorer
                           </h6>
-                          <img src={cityexplorer} width='200' className="shadow border-0 img-fluid rounded shadow"/>
+                          <a href="https://practical-allen-4f642c.netlify.app/">
+                            <img 
+                              src={cityexplorer} 
+                              width='200' 
+                              className="shadow border-0 img-fluid rounded shadow"
+                            />
+                          </a>
                           <p className="description mt-3">
                             A React application that uses three third party API's to give a user a map, weather, and entertainment-related information about a city of their choice.
                           </p>
@@ -204,7 +294,13 @@ class Landing extends React.Component {
                           <h6 className="text-primary text-uppercase">
                             Drum Machine
                           </h6>
-                          <img src={drummachine} width='200' className="shadow border-0 img-fluid rounded shadow"/>
+                          <a href="https://jessivelazquez.github.io/DrumMachine/">
+                            <img 
+                              src={drummachine} 
+                              width='200' 
+                              className="shadow border-0 img-fluid rounded shadow"
+                            />
+                          </a>
                           <p className="description mt-3">
                             A 8 beat-pattern drum machine designed using Javascript, HTML, and CSS that features 11 instrument tracks each with a selectable sound library and tempo slider.
                           </p>
@@ -230,70 +326,6 @@ class Landing extends React.Component {
                         </CardBody>
                       </Card>
                     </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            Storefront
-                          </h6>
-                          <img src={storefront} width='200' className="shadow border-0 img-fluid rounded shadow" />
-                          <p className="description mt-3">
-                            An e-commerce site built with React and Redux, including a shopping cart and styling with Material UI. Paired with a custom API server built in Node.js.
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              React
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              Redux
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              Material UI
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="https://jessi-storefront.herokuapp.com/"
-                            // onClick={e => e.preventDefault()}
-                          >
-                            View Site
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            Task Queue
-                          </h6>
-                          <img src={taskqueue} width='200' className="shadow border-0 img-fluid rounded shadow"/>
-                          <p className="description mt-3">
-                          A task tracking application that allows a user to add new tasks, update tasks as completed, and filter tasks several ways. Paired with a custom API server built in Node.js. 
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              React
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              Redux
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              Node.js
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="https://jessi-todo-react.herokuapp.com/"
-                            // onClick={e => e.preventDefault()}
-                          >
-                            View Site
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
                   </Row>
                 </Col>
               </Row>
@@ -303,12 +335,14 @@ class Landing extends React.Component {
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
+                  <a href="https://jessi-todo-react.herokuapp.com/">
                     <img 
                     alt='...'
                     src={taskqueue} 
                     width='500'
                     className="shadow border-0 img-fluid rounded shadow"
                     />
+                  </a>
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
@@ -379,8 +413,8 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={aboutme}
-                      width='250'
+                      src={me}
+                      width='200'
                       top
                     />
                     <blockquote className="card-blockquote">
