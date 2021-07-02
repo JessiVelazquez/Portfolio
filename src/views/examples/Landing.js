@@ -28,6 +28,8 @@ import team4 from "assets/img/theme/team-4-800x800.jpg";
 import cookiestand from "assets/img/theme/CookieStand.png";
 import drummachine from "assets/img/theme/DrumMachine.png";
 import horns from "assets/img/theme/Horns.png";
+import storefront from "assets/img/theme/storefront.png";
+import taskqueue from "assets/img/theme/taskqueue.png";
 import headshot from "assets/img/theme/headshot.jpg";
 import recipes from "assets/img/theme/recipes.png";
 import aboutme from "assets/img/theme/aboutme.jpg"
@@ -97,7 +99,7 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        My Portfolio{" "}
+                        Jessi Velazquez{" "}
                       </h1>
                       <p className="lead text-white">
                       I am fasciniated by the flexibility of technology, and the ability to creatively design needs-based software tools ad hoc, free of the confines of existing software currently on the market.<br></br>
@@ -232,27 +234,27 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <h6 className="text-primary text-uppercase">
-                            Gallery of Horns
+                            Storefront
                           </h6>
-                          <img src={horns} width='200' className="shadow border-0 img-fluid rounded shadow" />
+                          <img src={storefront} width='200' className="shadow border-0 img-fluid rounded shadow" />
                           <p className="description mt-3">
-                            A React app that displays cards of different animals, allowing the user to filter based on their number of horns.
+                            An e-commerce site built with React and Redux, including a shopping cart and styling with Material UI. Paired with a custom API server built in Node.js.
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
                               React
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              Javascript
+                              Redux
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              bootstrap.js
+                              Material UI
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="success"
-                            href="https://agitated-meitner-31b5e4.netlify.app/"
+                            href="https://jessi-storefront.herokuapp.com/"
                             // onClick={e => e.preventDefault()}
                           >
                             View Site
@@ -264,59 +266,27 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <h6 className="text-primary text-uppercase">
-                            Cookie Stand
+                            Task Queue
                           </h6>
-                          <img src={cookiestand} width='200' className="shadow border-0 img-fluid rounded shadow"/>
+                          <img src={taskqueue} width='200' className="shadow border-0 img-fluid rounded shadow"/>
                           <p className="description mt-3">
-                            A web application built in Javascript that renders tabular data based on user input, allowing a bakery manager to predict number of sales by hour at different store locations by inputting sales data.
+                          A task tracking application that allows a user to add new tasks, update tasks as completed, and filter tasks several ways. Paired with a custom API server built in Node.js. 
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
-                              Javascript
+                              React
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              HTML
+                              Redux
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              CSS
+                              Node.js
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="success"
-                            href="https://jessivelazquez.github.io/cookie-stand/sales.html"
-                            // onClick={e => e.preventDefault()}
-                          >
-                            View Site
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            Recipe Roulette
-                          </h6>
-                          <img src={recipes} width='200' className="shadow border-0 img-fluid rounded shadow"/>
-                          <p className="description mt-3">
-                            A user-research study that randomly generates recipes and tracks users' decisons to view light or dark mode in local storage.
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              Javascript
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              HTML
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              CSS
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="https://oakfive.github.io/recipe-roulette/"
+                            href="https://jessi-todo-react.herokuapp.com/"
                             // onClick={e => e.preventDefault()}
                           >
                             View Site
@@ -335,21 +305,16 @@ class Landing extends React.Component {
                 <Col className="order-md-2" md="6">
                     <img 
                     alt='...'
-                    src={horns} 
-                    width='350'
+                    src={taskqueue} 
+                    width='500'
                     className="shadow border-0 img-fluid rounded shadow"
                     />
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    {/* <div>
-                      <p>
-                        <br></br>
-                      </p>
-                    </div> */}
-                    <h3>Featured Project: Gallery of Horns</h3>
+                    <h3>Featured Project: Task Queue</h3>
                     <p>
-                    A React app that displays cards of different animals, allowing the user to filter based on their number of horns.
+                    A task tracking application that allows a user to add new tasks, update tasks as completed, and filter tasks several ways. Paired with a custom API server built in Node.js. 
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
@@ -364,7 +329,7 @@ class Landing extends React.Component {
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Dropdown form to filter data
+                              Custom filtering options
                             </h6>
                           </div>
                         </div>
@@ -380,7 +345,7 @@ class Landing extends React.Component {
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">Like Count Button</h6>
+                            <h6 className="mb-0">Task entry form</h6>
                           </div>
                         </div>
                       </li>
@@ -396,7 +361,7 @@ class Landing extends React.Component {
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Colorful Styling
+                              Professional styling
                             </h6>
                           </div>
                         </div>
